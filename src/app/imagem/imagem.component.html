@@ -1,0 +1,6 @@
+<div class="container">
+<img *ngIf="!quebrado" src="assets/biscoito.png" alt="Biscoito Inteiro">
+<img *ngIf="quebrado" src="assets/biscoito-quebrado.png" alt="Biscoito Quebrado">
+<p class="frase" *ngIf="quebrado">{{fraseAleatoria}}</p>
+<button id="btn_alternar_imagem" (click)="alternarImagem()">Quebrar ou fechar biscoito</button>
+</div>
